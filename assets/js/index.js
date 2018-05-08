@@ -12,7 +12,17 @@ function addTodo() {
 function renderTodo() {
   todoList.innerHTML = ''
   window.todos.forEach(function (todo, index) {
-    todoList.innerHTML += `<p>${todo}</p> <button onclick="deleteTodo(${index})">Delete</button>`
+    todoList.innerHTML += `
+        <div class="card">
+            <div class="container">
+                <div class="card-title">
+                    ${todo}
+                    <button class="button card-button" onclick="deleteTodo(${index})">Finish</button>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    `
   })
 }
 

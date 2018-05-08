@@ -45,6 +45,7 @@ body {
     background-color: white;
     line-height: 25px;
     margin-bottom: 15px;
+    border: solid 2px #dbdbdb;
 }
 
 .card-title {
@@ -52,10 +53,44 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
     color: #2d2d2d;
-    border-bottom: solid 2px #dbdbdb;
+    /*border-bottom: solid 2px #dbdbdb;*/
 }
 
 .card-body {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.card-button {
+    background-color: #39b85d;
+    color: white;
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Style For TodoForm */
+.todoForm {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.todoForm input[type="text"] {
+    width: 300px;
+    padding: 10px 15px;
+    border: solid 2px #ebebeb;
+    border-radius: 5px;
+    color: #454545;
+}
+
+.todoForm input[type="submit"] {
+    padding: 10px 15px;
+    border: none;
+    background-color: #0a72b8;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
 }
