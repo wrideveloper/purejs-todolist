@@ -11,9 +11,14 @@ function addTodo() {
 
 function renderTodo() {
   todoList.innerHTML = ''
-  window.todos.forEach(function (todo) {
-    todoList.innerHTML += `<p>${todo}</p>`
+  window.todos.forEach(function (todo, index) {
+    todoList.innerHTML += `<p>${todo}</p> <button onclick="deleteTodo(${index})">Delete</button>`
   })
+}
+
+function deleteTodo(index) {
+  window.todos.splice(index, 1)
+  renderTodo()
 }
 
 todoSubmit.addEventListener('click', addTodo)
